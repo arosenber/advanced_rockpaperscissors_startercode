@@ -4,29 +4,46 @@
   <head>
       <title>RPS Game</title>
       <!-- Link CSS here -->
-      
+      <link type='text/css' rel='stylesheet' href='css/style.css' />
       <!-- Link JQuery here -->
-      
-      <!-- Link Javascript File here -->
-      
-      <!-- Latest compiled and minified Bootstrap CSS -->
-      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <!-- Link script.js here -->
+      <script src='js/script.js'></script>
+        <!-- Latest compiled and minified Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   </head>
 
   <body>
-      <!-- TASK 1: In the div below. 
-        1. In a header tag, add a title.
-        2. In a paragraph tag, add instructions on how to play the game.
-        3. Add a RPS image.
-        4. Add input box and button .
-        5. Add divs to record User Choice and Computer Choice.
-        6. Add a div to record the Winner.
+     <!-- TASK 1: In the div below. 
+        1. Add a title 
+        2. Add a prompt 
+        3. Add a RPS image
+        4. Add input box and button 
+        5. Add divs to record User Choice and Computer Choice
+        6. Add a div to record the Winner
      -->
-    <div class="container text-center">
-    
+   <div class="container text-center">
+      <h1>Rock Paper Scissors</h1>
+      <img src="http://www.coltnews.com/wp-content/uploads/2016/04/RPS.png">
+      <h3>Please Submit Your Choice Below</h3> 
+      <div class="form-inline text-center">
+        <input id="input" class="form-control"> 
+        <button id="shoot" class="btn">Shoot!</button>
+      </div>
+
+      <div class="col-sm-6">
+          <h4 class="text-center">User Choice</h4>
+          <p id="userChoice" class="text-center"></p>
+      </div>
+
       
+      <div class="col-sm-6">
+           <h4 class="text-center">Computer Choice</h4> 
+           <p id="computerChoice" class="text-center"></p> 
+      </div>
 
 
+      <div id="result" class="text-center">Computer Wins!</div>
     
     </div>
 
