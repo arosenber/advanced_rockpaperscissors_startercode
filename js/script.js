@@ -64,5 +64,11 @@ $(document).ready(() => {
 
     //Click Function when shoot is clicked
     $("#shoot").click(shootFn);
+    
+    $("#input").keypress(function(e) {
+        if(e.which == 13) {
+            shootFn();
+        }
+    });
 
 });
