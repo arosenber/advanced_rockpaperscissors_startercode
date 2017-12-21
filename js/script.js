@@ -24,7 +24,7 @@ const choices = ["rock", "paper", "scissors"];
 
 var shootFn = () => {
     //Takes in User Choice from the input box and stores it in a variable
-    const userChoice = $("#input").val();
+    const userChoice = $("#input").val().toLocaleLowerCase();
 
     //Display the user choice to the screen
     $("#userChoice").html(userChoice);
